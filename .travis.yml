@@ -4,3 +4,5 @@ node.js: "latest"
 before_script: 
   coffee -c -o lib src
   
+before_install:
+  npm install coffee-script
