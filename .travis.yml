@@ -3,7 +3,7 @@ node_js:
   - "latest"
 
 before_script: 
-  coffee -c -o lib src
+  ./node_modules/.bin/cake build
   
 before_install:
   - npm install coffee-script
