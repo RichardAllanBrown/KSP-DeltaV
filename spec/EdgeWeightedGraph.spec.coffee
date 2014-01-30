@@ -18,4 +18,3 @@ describe 'Weighted Edge and EdgeWeightedGraph work as expected', ->
       
     it 'correctly sets the weighting', ->
       expect(@testOption.getWeight()).toEqual @WEIGHT
-});
