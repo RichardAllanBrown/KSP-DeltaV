@@ -2,7 +2,7 @@
     "devDependencies": {
         "jasmine-node": ">=1.0.26",
         "coffee-script": "latest"
-    }
+    },
   
     "scripts": {
         "test": "./node_modules/.bin/cake test",
