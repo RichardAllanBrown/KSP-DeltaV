@@ -1,5 +1,5 @@
 #Tests the EdgeWeightedGraph and Edge classes
-WeightedEdge = require("../src/WeightedEdgeGraph").WeightedEdge
+WeightedEdge = require('../src/WeightedEdgeGraph').WeightedEdge
 
 describe 'Weighted Edge and EdgeWeightedGraph work as expected', ->
   describe 'Weighted edge constructed properly', ->
