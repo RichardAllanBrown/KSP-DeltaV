@@ -26,7 +26,7 @@
     },
   
     "scripts": {
-        "test": "./node_modules/.bin/cake test",
-        "install": "./node_modules/.bin/cake build"
+        "test": "test -d node_modules && ./node_modules/.bin/cake test || cake test",
+        "install": "test -d node_modules && ./node_modules/.bin/cake build || cake build"
     }
 }
