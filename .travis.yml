@@ -1,5 +1,5 @@
-language: node.js
-node.js: "latest"
+language: node_js
+node_js: "latest"
 
 before_script: 
   coffee -c -o lib src
