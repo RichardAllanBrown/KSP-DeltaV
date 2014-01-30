@@ -17,9 +17,12 @@
     
     "main": "./lib/WeightedEdgeGraph",
     
+    "dependencies": {
+        "coffee-script": "latest"
+    }
+    
     "devDependencies": {
         "jasmine-node": ">=1.0.26",
-        "coffee-script": "latest"
     },
   
     "scripts": {
