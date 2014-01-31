@@ -13,6 +13,7 @@ spawnAndRun = (command, args, callback) ->
 
 test = (callback) ->
   print "testing..."
+  print fs.readdirSync('')
   spawnAndRun 'jasmine-node', ['--coffee', 'spec/'], callback
   print "\n"
 
