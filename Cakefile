@@ -27,8 +27,9 @@ buildTests = (callback) ->
   print "\n"
 
 task 'test', 'Run all tests', ->
-  buildTests(test())
+  test()
 
 task 'build', 'Build the Javascript output', ->
   build()
+  buildTests()
 
