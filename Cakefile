@@ -17,15 +17,17 @@ test = (callback) ->
   print "\n"
 
 build = (callback) ->
-  #fs.mkdirSync 'lib', 0o0755
   print "compiling..."
   spawnAndRun 'coffee', ['--compile', '--output', 'lib', 'src'], callback
+  print "\n"
+
+buildTests = (callback) ->
+  print "compiling tests..."
   spawnAndRun 'coffee', ['--compile', '--output', 'spec', 'spec'], callback
   print "\n"
 
 task 'test', 'Run all tests', ->
-  test()
-  print fs.readdir('.')
+  buildTests(test())
 
 task 'build', 'Build the Javascript output', ->
   build()
