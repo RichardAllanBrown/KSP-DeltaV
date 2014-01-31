@@ -13,8 +13,7 @@ spawnAndRun = (command, args, callback) ->
 
 test = (callback) ->
   print "testing..."
-  spawnAndRun 'jasmine-node', ['--coffee', './spec', '--captureExceptions'], callback
-  print fs.readdir('./spec')
+  spawnAndRun 'jasmine-node', ['--coffee', './spec'], callback
   print "\n"
 
 build = (callback) ->
