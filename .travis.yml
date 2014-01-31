@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-  - "latest"
+  - 0.8
+  - 0.6
 
 before_script: 
   ./node_modules/.bin/cake build
