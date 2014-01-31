@@ -1,9 +1,6 @@
 #Tests for the edgeweightedgraph class
-fs = require 'fs'
-console.log fs.readdir('.')
-
-WeightedEdge = require('./lib/WeightedEdgeGraph').WeightedEdge
-WeightedEdgeGraph = require('./lib/WeightedEdgeGraph').WeightedEdgeGraph
+WeightedEdge = require('../../lib/WeightedEdgeGraph').WeightedEdge
+WeightedEdgeGraph = require('../../lib/WeightedEdgeGraph').WeightedEdgeGraph
 
 describe 'Edge Weighted Graph Classes', ->
   
