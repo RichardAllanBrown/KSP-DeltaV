@@ -13,7 +13,7 @@ spawnAndRun = (command, args, callback) ->
 
 test = (callback) ->
   print "testing..."
-  spawnAndRun 'jasmine-node', ['--coffee', './spec'], callback
+  spawnAndRun 'jasmine-node', ['--coffee', './spec', '--captureExceptions'], callback
   print "\n"
 
 build = (callback) ->
