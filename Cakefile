@@ -12,7 +12,7 @@ spawnAndRun = (command, args, callback) ->
     callback?() if code is 0
 
 test = (callback) ->
-  spawnAndRun 'jasmine-node', ['--coffee', 'spec'], callback
+  spawnAndRun 'jasmine-node', ['--coffee', 'spec/'], callback
 
 build = (callback) ->
   #fs.mkdirSync 'lib', 0o0755
