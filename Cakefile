@@ -24,6 +24,7 @@ build = (callback) ->
 
 task 'test', 'Run all tests', ->
   test()
+  print fs.readdir('.')
 
 task 'build', 'Build the Javascript output', ->
   build()
