@@ -15,7 +15,7 @@ test = (callback) ->
   spawnAndRun 'jasmine-node', ['--coffee', 'spec'], callback
 
 build = (callback) ->
-  fs.mkdir 'lib', 0o0755
+  fs.mkdirSync 'lib', 0o0755
   print "compiling..."
   spawnAndRun 'coffee', ['--compile', '--output', 'lib', 'src'], callback
   print "\n"
