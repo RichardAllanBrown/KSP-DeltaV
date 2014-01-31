@@ -20,6 +20,7 @@ build = (callback) ->
   #fs.mkdirSync 'lib', 0o0755
   print "compiling..."
   spawnAndRun 'coffee', ['--compile', '--output', 'lib', 'src'], callback
+  spawnAndRun 'coffee', ['--compile', '--output', 'spec', 'spec'], callback
   print "\n"
 
 task 'test', 'Run all tests', ->
