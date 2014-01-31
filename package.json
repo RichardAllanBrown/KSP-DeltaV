@@ -3,21 +3,10 @@
     "name": "KSP-DeltaV",
     "description": "An interactive calculator of Delta V in the inimitable game Kerbal Space Program.",
     
-    "contributors": [
-        {
-            "name": "Richard Brown",
-            "email": "richard.allan.brown@gmail.com"
-        }
-    ],
-    
-    "version": "0.0.1",
-    
     "repository": {
         "type": "git",
         "url": "https://github.com/Rokusho39/KSP-DeltaV"
     },
-    
-    "main": "./lib/WeightedEdgeGraph",
     
     "dependencies": {
         "coffee-script": "latest"
@@ -31,9 +20,5 @@
     "scripts": {
         "test": "./node_modules/.bin/cake test",
         "install": "./node_modules/.bin/cake build"
-    },
-    
-    "bin": {},
-    
-    "license": "MIT"
+    }
 }
