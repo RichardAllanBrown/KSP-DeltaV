@@ -1,6 +1,6 @@
 #Tests for the edgeweightedgraph class
-WeightedEdge = require('../lib/WeightedEdgeGraph').WeightedEdge
-WeightedEdgeGraph = require('../lib/WeightedEdgeGraph').WeightedEdgeGraph
+WeightedEdge = require('../lib/WeightedEdgeGraph.js').WeightedEdge
+WeightedEdgeGraph = require('../lib/WeightedEdgeGraph.js').WeightedEdgeGraph
 
 describe 'Edge Weighted Graph Classes', ->
   
