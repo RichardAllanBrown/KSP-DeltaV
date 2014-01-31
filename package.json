@@ -24,7 +24,8 @@
     },
     
     "devDependencies": {
-        "jasmine-node": ">=1.0.26"
+        "jasmine-node": ">=1.0.26",
+        "coffee-script": "latest"
     },
   
     "scripts": {
