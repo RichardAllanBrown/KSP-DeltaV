@@ -3,21 +3,20 @@ class WeightedEdgeGraph
 
   #Creates a new WeightedEdgeGraph, must know the number of nodes to include first
   constructor: (numberOfNodes) ->
-    @_v = numberOfNodes
     @_e = 0
     @_nodes = []
     
     @_nodes.push([]) for n in numberOfNodes
     
   getVertexCount: () ->
-    @_v
+    @_v.Length
     
   getEdgeCount: () ->
     @_e
 
   #Add a new weighted edge to the graph
   addEdge: (edge) ->
-    #@_e ++
+    @_e++
     from = edge.getFromNode()
     to = edge.getToNode()
     @_nodes[from].push(edge)
