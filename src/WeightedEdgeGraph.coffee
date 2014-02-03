@@ -9,7 +9,7 @@ class WeightedEdgeGraph
     @_nodes.push([]) for n in numberOfNodes
     
   getVertexCount: () ->
-    @_v.Length
+    @_nodes.Length
     
   getEdgeCount: () ->
     @_e
