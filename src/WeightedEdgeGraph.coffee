@@ -18,8 +18,8 @@ class WeightedEdgeGraph
   #Add a new weighted edge to the graph
   addEdge: (edge) ->
     #@_e ++
-    from = edge.from
-    to = edge.to
+    from = edge.getFromNode
+    to = edge.getToNode
     @_nodes[from].push(edge)
     @_nodes[to].push(edge) if from != to
 
