@@ -19,7 +19,7 @@ describe 'Edge Weighted Graph Classes', ->
       
   describe 'Weighted Edge Graph Class', ->
     beforeEach ->
-      @testGraph = new EdgeWeightedGraph 6
+      @testGraph = new WeightedEdgeGraph 6
       
     it 'has a vertice count set correctly', ->
       expect(@testGraph.getVertexCount()).toEqual 6
