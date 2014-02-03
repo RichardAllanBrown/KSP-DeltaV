@@ -5,8 +5,7 @@ class WeightedEdgeGraph
   constructor: (numberOfNodes) ->
     @_e = 0
     @_nodes = []
-    
-    @_nodes.push([]) for n in numberOfNodes
+    @_nodes.push([]) for i in [0...numberOfNodes] by 1
     
   getVertexCount: () ->
     @_nodes.Length
