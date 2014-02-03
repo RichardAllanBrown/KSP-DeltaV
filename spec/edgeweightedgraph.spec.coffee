@@ -13,7 +13,7 @@ describe 'The WeightedEdge class, once constructed', ->
     expect(@testEdge.getToNode()).toEqual 6
     
   it 'has a value returned for getWeight', ->
-    expect(@tesEdge.getWeight()).toEqual 7
+    expect(@testEdge.getWeight()).toEqual 7
     
 describe 'The eightedEdgeGraph class, with 6 nodes', ->
   beforeEach ->
@@ -23,7 +23,7 @@ describe 'The eightedEdgeGraph class, with 6 nodes', ->
     expect(@testGraph.getVertexCount()).toEqual 6
     
   it 'has zero edges when none are set', ->
-    expect(@testGrapg.getEdgeCount()).toEqual 0
+    expect(@testGraph.getEdgeCount()).toEqual 0
     
   it 'can have new edges added, changing the edge count', ->
     @testGraph.addEdge(new WeightedEdge(0,1,5))
