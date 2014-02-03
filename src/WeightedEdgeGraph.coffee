@@ -38,3 +38,7 @@ class WeightedEdge
     
   getWeight: () ->
     @weight
+
+#Exports, used for testing purposes
+exports.WeightedEdge = WeightedEdge
+exports.WeightedEdgeGraph = WeightedEdgeGraph
