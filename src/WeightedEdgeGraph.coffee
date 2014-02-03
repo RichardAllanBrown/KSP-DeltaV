@@ -7,7 +7,7 @@ class WeightedEdgeGraph
     @_e = 0
     @_nodes = []
     
-    @_nodes.push(new Array()) for n in numberOfNodes
+    @_nodes.push(new Array(0)) for n in numberOfNodes
     
   getVertexCount: () ->
     @_v
