@@ -23,7 +23,7 @@ class WeightedEdgeGraph
 
   #Returns an array of all edges on the graph
   getEdges: (node) ->
-    @_nodes[from]
+    @_nodes[node]
 
 #Weighted Edge class used to store the from to and weight
 class WeightedEdge
