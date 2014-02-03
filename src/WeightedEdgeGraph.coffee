@@ -7,7 +7,7 @@ class WeightedEdgeGraph
     @_e = 0
     @_nodes = []
     
-    @_nodes.push(new Array) for n in numberOfNodes
+    @_nodes.push(new Array()) for n in numberOfNodes
     
   getVertexCount: () ->
     @_v
@@ -31,13 +31,13 @@ class WeightedEdgeGraph
 class WeightedEdge
   constructor: (@from, @to, @weight) ->
     
-  getFromNode: () ->
+  getFromNode: ->
     @from
     
-  getToNode: () ->
+  getToNode: ->
     @to
     
-  getWeight: () ->
+  getWeight: ->
     @weight
 
 #Exports, used for testing purposes
