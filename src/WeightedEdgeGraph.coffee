@@ -3,7 +3,7 @@ class WeightedEdgeGraph
 
   #Creates a new WeightedEdgeGraph, must know the number of nodes to include first
   constructor: (numberOfNodes) ->
-    @_v = 0
+    @_v = numberOfNodes
     @_e = 0
     @_nodes = []
     
@@ -17,6 +17,7 @@ class WeightedEdgeGraph
 
   #Add a new weighted edge to the graph
   addEdge: (edge) ->
+    @_e ++
     from = edge.from
     to = edge.to
     @_nodes[from].push(edge)
