@@ -13,7 +13,7 @@
     },
     
     "devDependencies": {
-        "jasmine-node": "latest",
+        "jasmine-node": "latest"
     },
   
     "scripts": {
