@@ -20,6 +20,7 @@ class DeltaVCalc
     secondProd = Math.sqrt((2 * (initOrbit + parentRadius)) / (targetOrbit + initOrbit + 2 * parentRadius))
     firstProd * (1 - secondProd)
 
+exports.DeltaVCalc = DeltaVCalc
 
   #http://space.stackexchange.com/questions/1380/how-to-calculate-delta-v-required-for-a-planet-to-planet-hohmann-transfer
   #For more information on planet to planet trasnfers
