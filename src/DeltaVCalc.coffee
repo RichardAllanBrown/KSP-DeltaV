@@ -9,14 +9,14 @@ class DeltaVCalc
     toElliptical + toCircularize
   
   #Returns DeltaV needed to transfer from a circular to elliptical orbit
-  calcHohmannToElliptical: (gravParam, initOrbit, tragetOrbit, parentRadius) ->
+  calcHohmannToElliptical: (gravParam, initOrbit, targetOrbit, parentRadius) ->
     firstProd = Math.sqrt(gravParam / (initOrbit + parentRadius))
-    secondProd = Math.sqrt((2 * (tragetOrbit + parentRadius)) / (targetOrbit + initOrbit + 2 * parentRadius))
+    secondProd = Math.sqrt((2 * (targetOrbit + parentRadius)) / (targetOrbit + initOrbit + 2 * parentRadius))
     firstProd * (secondProd - 1)
   
   #Returns DeltaV needed to transfer from an elliptical to a cicular orbit
-  caclHohmannToCircularise: (gravParam, initOrbit, tragetOrbit, parentRadius) ->
-    firstProd = Math.sqrt(gravParam / (tragetOrbit + parentRadius))
+  caclHohmannToCircularise: (gravParam, initOrbit, targetOrbit, parentRadius) ->
+    firstProd = Math.sqrt(gravParam / (targetOrbit + parentRadius))
     secondProd = Math.sqrt((2 * (initOrbit + parentRadius)) / (targetOrbit + initOrbit + 2 * parentRadius))
     firstProd * (1 - secondProd)
 
