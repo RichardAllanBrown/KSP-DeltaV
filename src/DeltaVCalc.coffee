@@ -4,7 +4,7 @@ class DeltaVCalc
   
   #Returns DeltaV needed to transfer from one circular orbit to another
   calcHohmannTransfer: (gravParam, initOrbit, targetOrbit, parentRadius) ->
-    toElliptical = caclHohmannToElliptical(gravParam, initOrbit, targetOrbit, parentRadius)
+    toElliptical = calcHohmannToElliptical(gravParam, initOrbit, targetOrbit, parentRadius)
     toCircularize = caclHohmannToCircularise(gravParam, initOrbit, targetOrbit, parentRadius)
     toElliptical + toCircularize
   
