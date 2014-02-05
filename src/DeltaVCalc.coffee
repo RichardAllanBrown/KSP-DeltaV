@@ -19,3 +19,9 @@ class DeltaVCalc
     firstProd = Math.sqrt(gravParam / (tragetOrbit + parentRadius)
     secondProd = Math.sqrt((2 * (initOrbit + parentRadius)) / (targetOrbit + initOrbit + 2 * parentRadius))
     firstProd * (1 - secondProd)
+
+
+  #http://space.stackexchange.com/questions/1380/how-to-calculate-delta-v-required-for-a-planet-to-planet-hohmann-transfer
+  #For more information on planet to planet trasnfers
+  #http://space.stackexchange.com/questions/2046/delta-v-chart-mathematics/2048#2048
+  #For more on lunar injections
