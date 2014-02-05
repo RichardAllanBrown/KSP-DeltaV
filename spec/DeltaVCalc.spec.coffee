@@ -6,7 +6,7 @@ describe 'DeltaV Calc, when constructed without a universe', ->
     @cacl = new DeltaVCalc(null)
     
   it 'can calculate a Hohmann transfer to a elliptical orbit', ->
-    expect(calcHohmannToElliptical(3530.461, 100, 200, 600).toEqual 73.65
+    expect(calcHohmannToElliptical(3530.461, 100, 200, 600)).toEqual 73.65
   
   it 'can calculate a Hohmann transfer to a circular orbit', ->
     expect(caclHohmannToCircularise(3530.461, 100, 200, 600)).toEqual 71.23
